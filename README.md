@@ -2,13 +2,25 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.1.
 
-## Development server
+## db.server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This project works with a demo using db.json
+1.Create a new folder named graphics-server
+2.Create or place a file db.json with the content:
 
-## Code scaffolding
+"grafica": {
+        "facebook": 2700,
+        "youtube": 2000,
+        "whatsapp": 1400,
+        "facebook-messenger": 1350,
+        "instagram": 1123
+    }
+}
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+3.Install json server: npm i json-server
+
+4.Execute json server: json-server --watch db.json
+
 
 ## Build
 
